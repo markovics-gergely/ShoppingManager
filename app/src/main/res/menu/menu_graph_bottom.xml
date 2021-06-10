@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/bar"
+    android:title="@string/bar"
+    app:showAsAction="ifRoom"
+    android:icon="@drawable/bar_button"
+    android:textColor="@color/white">
+</item>
+<item
+    android:id="@+id/line"
+    app:showAsAction="ifRoom"
+    android:title="@string/line"
+    android:icon="@drawable/line_button"
+    android:textColor="@color/white"/>
+<item
+    android:id="@+id/pie"
+    app:showAsAction="ifRoom"
+    android:title="@string/pie"
+    android:icon="@drawable/pie_button"
+     />
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:context="ExpenseManager.mainmenu.MainActivity">
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/greenwave" />
+
+        <ImageButton
+            android:id="@+id/btnShopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/textframe_button"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/grocery" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bluewave" />
+
+        <ImageButton
+            android:id="@+id/btnAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/textframe_button"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/income" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ExpenseManager.graph.GraphActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/graphtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="@color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/chart_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackgroundGraph"
+            android:layout_marginTop="?attr/actionBarSize"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/colorPrimaryGraph">
+
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btnback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/back_button"
+                android:background="@null" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="5">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomgraphbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimaryGraph"
+                app:itemTextColor="@color/white"
+                app:menu="@menu/menu_graph_bottom"
+                android:layout_gravity="bottom"
+                app:labelVisibilityMode="labeled"
+                android:checkableBehavior="none" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btnhome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_button"
+                android:background="@null" />
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>

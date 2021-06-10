@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ExpenseManager.shoppinglist.ShoppingActivity">
+    <item
+        android:id="@+id/action_remove_all"
+        android:orderInCategory="100"
+        android:title="@string/action_remove_all"
+        android:icon="@drawable/remove_all_button"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/settings_button"
+        app:showAsAction="ifRoom" />
+</menu>

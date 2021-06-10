@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dip"
+    android:id="@+id/dialogNewAccountItem">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"/>
+
+    <EditText
+        android:id="@+id/AccountItemNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:text="@string/category"/>
+
+        <Spinner
+            android:id="@+id/AccountItemCategorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:text="@string/estimated_price"/>
+
+        <EditText
+            android:id="@+id/AccountItemEstimatedPriceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <CheckBox
+            android:id="@+id/AccountItemIsExpense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/is_expense"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/textframe_blue"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/AccountItemDatePick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calendar_button"
+                android:background="@drawable/textframe_button_black"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/calendar" />
+
+            <TextView
+                android:id="@+id/AccountItemDateText"
+                android:layout_width="match_parent"
+                android:background="@drawable/textframe"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDarkAccount"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

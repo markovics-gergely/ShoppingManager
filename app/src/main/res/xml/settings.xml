@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:key="account_settings"
+        app:title="Account Settings">
+
+        <SwitchPreferenceCompat
+            app:key="accountenable"
+            app:title="Enable Account Expense Limit"/>
+
+        <EditTextPreference
+            app:key="acclimit"
+            app:title="Account Expense Limit"
+            android:dependency="accountenable"
+            android:defaultValue="50000"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="shopping_settings"
+        app:title="Shopping Settings">
+
+        <SwitchPreferenceCompat
+            app:key="shoppingenable"
+            app:title="Enable Shopping Sum Limit"/>
+
+        <EditTextPreference
+            app:key="shoplimit"
+            app:title="Shopping Sum Limit"
+            android:dependency="shoppingenable"
+            android:defaultValue="15000"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

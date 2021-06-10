@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">ExpenseManager</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="bought">Bought</string>
+
+    <string name="new_shopping_item">New Shopping Item</string>
+    <string name="new_account_item">New Account Item</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+    <string name="estimated_price">Estimated price</string>
+    <string name="already_purchased">Already purchased</string>
+    <string name="shopping">Shopping</string>
+    <string name="account">Account</string>
+    <string name="action_remove_all">Remove All</string>
+    <string name="is_expense">Is Expense</string>
+
+    <string name="pie">Pie</string>
+    <string name="line">Line</string>
+    <string name="bar">Bar</string>
+
+    <string name="overaccountlimit">New expense is over the Expense Limit</string>
+    <string name="noteverybought">Not every Item is bought</string>
+    <string name="clearandsave">Are you sure you want to clear and save all item?</string>
+    <string name="noitem">There is no Item to Save</string>
+
+    <string name="sum">sum</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="shoppinglist">ShoppingList</string>
+    <string name="over_shopping_limit">New Item is over the ShoppingItem Sum Limit</string>
+    <string name="edited_over_shopping_limit">Edited Item is over the ShoppingItem Sum Limit</string>
+    <string name="not_valid">New or edited Item was not valid</string>
+    <string name="nothing_to_remove">There is no Item to remove</string>
+    <string name="remove_all_warn">Are you sure you want to remove all item?</string>
+    <string name="sum_over_limit">Your Sum is over the Limit</string>
+    <string name="shopping_enable">shoppingenable</string>
+    <string name="account_enable">accountenable</string>
+    <string name="acc_limit">acclimit</string>
+    <string name="shop_limit">shoplimit</string>
+    <string name="income">income</string>
+    <string name="expense">expense</string>
+    <string name="settings">Settings</string>
+    <string name="accountmanager">AccountManager</string>
+    <string name="items">items</string>
+    <string name="graph_manager">GraphManager</string>
+    <string name="nothing_to_graph">There is no Item to graph</string>
+    <string name="save_amp_clear"><![CDATA[Save & Clear]]></string>
+    <string name="home">Home</string>
+    <string name="item_over_limit">At least one Item is over the Limit</string>
+    <string name="over_expense_limit">New Item is over the Expense Limit</string>
+    <string name="edited_over_expense_limit">Edited Item is over the Expense Limit</string>
+    <string name="pie_entries">pieentries</string>
+    <string name="pie_sum">piesum</string>
+    <string name="ex_line_entries">exlineentries</string>
+    <string name="in_line_entries">inlineentries</string>
+    <string name="line_first_date">linefirstdate</string>
+    <string name="ex_bar_entries">exbarentries</string>
+    <string name="in_bar_entries">inbarentries</string>
+    <string name="pie_chart">pieChart</string>
+    <string name="calendar">Calendar</string>
+
+    <string-array name="shopcategory_items">
+        <item>Bakery</item>
+        <item>Book</item>
+        <item>Clothes</item>
+        <item>Dairies</item>
+        <item>Detergents</item>
+        <item>Drink</item>
+        <item>Electronics</item>
+        <item>Fruits</item>
+        <item>Junk</item>
+        <item>KitchenTools</item>
+        <item>Meat</item>
+        <item>Toiletries</item>
+        <item>Vegetables</item>
+    </string-array>
+
+    <string-array name="acccategory_items">
+        <item>Aldi</item>
+        <item>Alza</item>
+        <item>Birthday</item>
+        <item>BurgerKing</item>
+        <item>ClothingShop</item>
+        <item>Decathlon</item>
+        <item>DrugStore</item>
+        <item>ElectronicShop</item>
+        <item>Euronics</item>
+        <item>FastFood</item>
+        <item>Fressnapf</item>
+        <item>FurnitureShop</item>
+        <item>Grocery</item>
+        <item>HnM</item>
+        <item>Ikea</item>
+        <item>Jysk</item>
+        <item>Kfc</item>
+        <item>Libri</item>
+        <item>Lidl</item>
+        <item>McDonalds</item>
+        <item>MediaMarkt</item>
+        <item>Pepco</item>
+        <item>Pharmacy</item>
+        <item>Pocket Money</item>
+        <item>Rossmann</item>
+        <item>Scholarship</item>
+        <item>Spar</item>
+        <item>SportsDirect</item>
+        <item>SuperMarket</item>
+    </string-array>
+</resources>

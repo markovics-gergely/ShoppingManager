@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ExpenseManager.shoppinglist.ShoppingActivity">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/shoptoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="@color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <include layout="@layout/content_shopping" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_add_white_36dp" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryShop"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/sumText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/textframe"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:text=""/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btnclear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/save_button"
+                android:background="@null"
+                android:contentDescription="@string/save_amp_clear" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btnback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_button"
+                android:background="@null"
+                android:contentDescription="@string/home" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

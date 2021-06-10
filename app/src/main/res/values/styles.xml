@@ -1,0 +1,75 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AccountActivityTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryAccount</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkAccount</item>
+        <item name="colorAccent">@color/colorPrimaryAccount</item>
+        <item name="snackbarStyle">@style/AccountSnackbar</item>
+    </style>
+
+    <style name="ShoppingActivityTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryShop</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkShop</item>
+        <item name="colorAccent">@color/colorPrimaryShop</item>
+        <item name="snackbarStyle">@style/ShoppingSnackbar</item>
+
+    </style>
+
+    <style name="SettingsActivityTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimarySettings</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkSettings</item>
+        <item name="colorAccent">@color/colorPrimarySettings</item>
+    </style>
+
+    <style name="GraphActivityTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryGraph</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkGraph</item>
+        <item name="colorAccent">@color/colorPrimaryGraph</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="Widget.App.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Snackbar</item>
+        <item name="actionTextColorAlpha">1</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+    <style name="ThemeOverlay.App.Snackbar" parent="">
+        <item name="colorOnSurface">@color/colorPrimaryDark</item>
+        <item name="colorSurface">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AccountSnackbar" parent="Widget.App.Snackbar">
+        <item name="materialThemeOverlay">@style/AccountThemeOverlay</item>
+    </style>
+    <style name="AccountThemeOverlay" parent="">
+        <item name="colorOnSurface">@color/colorPrimaryDarkAccount</item>
+        <item name="colorSurface">@color/colorPrimaryDarkAccount</item>
+    </style>
+
+    <style name="ShoppingSnackbar" parent="Widget.App.Snackbar">
+        <item name="materialThemeOverlay">@style/ShoppingThemeOverlay</item>
+    </style>
+    <style name="ShoppingThemeOverlay" parent="">
+        <item name="colorOnSurface">@color/colorPrimaryDarkShop</item>
+        <item name="colorSurface">@color/colorPrimaryDarkShop</item>
+    </style>
+</resources>
